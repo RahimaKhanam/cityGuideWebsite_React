@@ -5,3 +5,21 @@
     --mainLightGrey: rgba(172, 172, 172);
     --mainBlue: #007bff;
 }
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.logo-text {
+    color: white;
+    font-family: 'Praise', cursive;
+    display: inline;
+}
+
+.c-logo {
+    size: 7em;
+}
