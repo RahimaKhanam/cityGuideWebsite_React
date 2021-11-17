@@ -15,7 +15,7 @@ const Card = props => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Culpa, cupiditate eius! Minima sapiente maiores, nesciunt cupiditate corporis sequi amet hic ex? 
                     </p>
-                    <Link to="/" className="btn btn-dark btn-c">Go anywhere</Link>
+                    <Link to="/details" className="btn btn-dark btn-c">Details</Link>
                 </div>
             </div>
         </div>

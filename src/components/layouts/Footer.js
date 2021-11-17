@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -8,48 +9,40 @@ function Footer() {
                 <div className="container">
                     <div className="row">
                         {/* Column 1 */}
-                        <div className="col-md-3 col-sm-6">
-                            <h4>Lorem ipsum</h4>
-                            <ul className="list-unstyled">
-                                <li>Lorem ipsum</li>
-                                <li>Lorem ipsum</li>
-                                <li>Lorem ipsum</li>
-                                <li>Lorem ipsum</li>
-                            </ul>
+                        <div className="col-md-4 col-sm-6">
+                            <h4>CityGuide Details</h4>
+                            <hr />
+                            <p className="text-white me-5">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                It has survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                                software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
                         </div>
 
                         {/* Column 2 */}
-                        <div className="col-md-3 col-sm-6">
-                            <h4>Lorem ipsum</h4>
-                            <ul className="list-unstyled">
-                                <li><a href="/">Lorem ipsum</a></li>
-                                <li><a href="/">Lorem ipsum</a></li>
-                                <li><a href="/">Lorem ipsum</a></li>
-                                <li><a href="/">Lorem ipsum</a></li>
-                            </ul>
+                        <div className="col-md-4 col-sm-6">
+                            <h4>Quick Links</h4>
+                            <hr />
+                            <div><Link to="/">Home</Link></div>
+                            <div><Link to="/news">News</Link></div>
+                            <div><Link to="/contact">Contact Us</Link></div>
+                            <div><Link to="/details">Details</Link></div>
                         </div>
 
                         {/* Column 3 */}
-                        <div className="col-md-3 col-sm-6">
-                            <h4>Lorem ipsum</h4>
-                            <ul className="list-unstyled">
-                            <li><a href="/">Lorem ipsum</a></li>
-                            <li><a href="/">Lorem ipsum</a></li>
-                            <li><a href="/">Lorem ipsum</a></li>
-                            <li><a href="/">Lorem ipsum</a></li>
-                            </ul>
+                        <div className="col-md-4 col-sm-6">
+                            <h4>Additional Information</h4>
+                            <hr />
+                            <div><p className="text-white mb-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></div>
+                            <div><p className="text-white mb-1">+91 899123918</p></div>
+                            <div><p className="text-white mb-1">+91 393363663</p></div>
+                            <div><p className="text-white mb-1">email@domain.com</p></div>
                         </div>
 
-                        {/* Column 1 */}
-                        <div className="col-md-3 col-sm-6">
-                            <h4>Lorem ipsum</h4>
-                            <ul className="list-unstyled">
-                            <li><a href="/">Lorem ipsum</a></li>
-                            <li><a href="/">Lorem ipsum</a></li>
-                            <li><a href="/">Lorem ipsum</a></li>
-                            <li><a href="/">Lorem ipsum</a></li>
-                            </ul>
-                        </div>
                     </div>
 
                     {/*Footer Bottom  */}
@@ -78,15 +71,16 @@ color: var(--mainWhite)
     padding-bottom: 2rem;
 }
 
-ul li a {
+.footer-middle a {
     color: var(--mainGrey);
     text-decoration: none;
 
 }
 
-ul li a: hover{
+.footer-middle a: hover{
     color: var(--mainLightGrey);
     
 }
+
 `
-;
+    ;
