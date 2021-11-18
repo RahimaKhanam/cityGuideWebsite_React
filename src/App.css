@@ -1,5 +1,5 @@
 :root {
-    --mainDark: #343a40;
+    --mainDark: rgb(0, 0, 0);
     --mainWhite: white;
     --mainGrey: rgba(109, 109, 109);
     --mainLightGrey: rgba(172, 172, 172);

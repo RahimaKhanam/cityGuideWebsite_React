@@ -66,13 +66,8 @@ padding-top: 3rem;
 color: var(--mainWhite)
 }
 
-.footer-bottom {
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-}
-
 .footer-middle a {
-    color: var(--mainGrey);
+    color: var(--mainWhite);
     text-decoration: none;
 
 }
@@ -80,6 +75,11 @@ color: var(--mainWhite)
 .footer-middle a: hover{
     color: var(--mainLightGrey);
     
+}
+
+.footer-bottom {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
 }
 
 `
