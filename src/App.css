@@ -6,6 +6,10 @@
     --mainBlue: #007bff;
 }
 
+.link:hover {
+    color: var(--mainLightGrey) !important;
+}
+
 .navbar-toggler:focus {
     outline: none;
 }
