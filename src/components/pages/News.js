@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NewsCompnent from '../layouts/NewsComponent';
+import "../../App.css";
 
 // Image import
 import img1 from '../images/dom-fotografii.jpg';
@@ -12,11 +13,12 @@ class News extends Component {
     render() {
         return (
             <div>
-                <h2 className="m-4 text-center">News Page</h2>
-                <NewsCompnent imgsrc={img1}/>
-                <NewsCompnent imgsrc={img2}/>
-                <NewsCompnent imgsrc={img3}/>
-                <NewsCompnent imgsrc={img4}/>
+                <h2 className="mt-5 text-center text-uppercase">Top News</h2>
+                <div className="underline mx-auto mb-5"></div>
+                <NewsCompnent imgsrc={img1} />
+                <NewsCompnent imgsrc={img2} />
+                <NewsCompnent imgsrc={img3} />
+                <NewsCompnent imgsrc={img4} />
             </div>
         )
     }

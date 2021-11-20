@@ -6,6 +6,15 @@
     --mainBlue: #007bff;
 }
 
+
+.underline {
+    height: 4px;
+    width: 4rem;
+    background-color: black;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
 .link:hover {
     color: var(--mainLightGrey) !important;
 }
