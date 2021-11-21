@@ -1,9 +1,9 @@
 import React from 'react';
 import './Carousel.css';
 import {Link} from 'react-router-dom';
-import img1 from '../images/tretyakovka.jpg';
-import img2 from '../images/mamm.jpg';
-import img3 from '../images/pushkin.jpg';
+import img1 from '../images/pm.jpg';
+import img2 from '../images/km.jpg';
+import img3 from '../images/ym.jpg';
 
 function Carousel() {
     return (
@@ -18,25 +18,22 @@ function Carousel() {
                     <div class="carousel-item active" data-interval='1000'>
                         <img src={img1} class="d-block w-100 car-img" alt="..."/>
                         <div class ="carousel-caption d-none d-md-block">
-                        <h2 className='text-black'>First slide label</h2>
-                        <p className='text-black'>Some representative placeholder content for the first slide.</p>
-                        <Link to ="/contact" className="btn btn-lg btn-dark">Contact Us</Link>
+                        <h1 className='text-black ct'>First slide label</h1>
+                        <h5 className='text-black cc'>Some representative placeholder content for the first slide.</h5>
                         </div>
                     </div>
                     <div class="carousel-item" data-interval='500'>
                         <img src={img2} class="d-block w-100 car-img" alt="..."/>
                         <div class ="carousel-caption d-none d-md-block">
-                        <h2 className='text-black'>Second slide label</h2>
-                        <p className='text-black'>Some representative placeholder content for the second slide.</p>
-                        <Link to ="/contact" className="btn btn-lg btn-dark">Contact Us</Link>
+                        <h1 className='text-black ct'>Second slide label</h1>
+                        <h5 className='text-black cc'>Some representative placeholder content for the second slide.</h5>
                         </div>
                     </div>
                     <div class="carousel-item" data-interval='500'>
                         <img src={img3} class="d-block w-100 car-img" alt="..."/>
                         <div class ="carousel-caption d-none d-md-block">
-                        <h2 className='text-black'>Third slide label</h2>
-                        <p className='text-black'>Some representative placeholder content for the third slide.</p>
-                        <Link to ="/contact" className="btn btn-lg btn-dark">Contact Us</Link>
+                        <h1 className='text-black ct'>Third slide label</h1>
+                        <h5 className='text-black cc'>Some representative placeholder content for the third slide.</h5>
                         </div>
                     </div>
                 </div>

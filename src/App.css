@@ -6,6 +6,10 @@
     --mainBlue: #007bff;
 }
 
+body {
+    background: radial-gradient(#e5e5e5, #fff, #e5e5e5);
+}
+
 
 .underline {
     height: 4px;
@@ -36,3 +40,10 @@
 .c-logo {
     size: 7em;
 }
+
+
+.g-cont {
+    height: 60vh;
+    width: auto;
+}
+

@@ -4,7 +4,7 @@ import './news.css'
 const NewsComponent= props => {
     return (
         <div>
-            <div class="card mb-3 ms-5" style={{width: '90%'}} >
+            <div class="card cs-card mb-3 ms-5" style={{width: '90%'}} >
                 <div class="row g-0">
                     <div class="col-md-4 overflow">
                         <img src={props.imgsrc} class="img-fluid rounded-start n-img" alt="news_image"/>

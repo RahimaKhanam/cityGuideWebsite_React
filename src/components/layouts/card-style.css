@@ -1,7 +1,3 @@
-body {
-    background: radial-gradient(#e5e5e5, #fff, #e5e5e5);
-}
-
 .c-img {
     width: 100%;
     height: 40vh;
@@ -21,7 +17,7 @@ body {
     width: 20rem;
 }
 
-.card:hover{
+.c-card:hover{
     box-shadow: 5px 10px 10px 1px rgba(0, 0, 0, 0.253) !important;
 }
 
