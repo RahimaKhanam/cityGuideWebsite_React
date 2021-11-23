@@ -1,55 +1,48 @@
-import React from 'react';
-import './Carousel.css';
-import {Link} from 'react-router-dom';
-import img1 from '../images/pm.jpg';
-import img2 from '../images/km.jpg';
-import img3 from '../images/ym.jpg';
+import React, { useState } from 'react';
+import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+import { CarouselData } from './CarouselData';
+import './Carousel.css'
 
-function Carousel() {
+const Carousel = ({ slides }) => {
+    const [current, setCurrent] = useState(0);
+    const length = slides.length;
+
+    const nextSlide = () => {
+        setCurrent(current === length - 1 ? 0 : current + 1);
+    };
+
+    const prevSlide = () => {
+        setCurrent(current === 0 ? length - 1 : current - 1);
+    };
+
+    if (!Array.isArray(slides) || slides.length <= 0) {
+        return null;
+    }
+
     return (
-        <div>
-            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-interval='1000'>
-                        <img src={img1} class="d-block w-100 car-img" alt="..."/>
-                        <div class ="carousel-caption d-none d-md-block">
-                        <h1 className='text-black ct'>First slide label</h1>
-                        <h5 className='text-black cc'>Some representative placeholder content for the first slide.</h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-interval='500'>
-                        <img src={img2} class="d-block w-100 car-img" alt="..."/>
-                        <div class ="carousel-caption d-none d-md-block">
-                        <h1 className='text-black ct'>Second slide label</h1>
-                        <h5 className='text-black cc'>Some representative placeholder content for the second slide.</h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-interval='500'>
-                        <img src={img3} class="d-block w-100 car-img" alt="..."/>
-                        <div class ="carousel-caption d-none d-md-block">
-                        <h1 className='text-black ct'>Third slide label</h1>
-                        <h5 className='text-black cc'>Some representative placeholder content for the third slide.</h5>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+        <section className="slider container-fluid">
+            <div className="a-left">
+                <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
             </div>
 
+            <div className="a-right">
+                <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
+            </div>
 
-        </div>
-    )
-}
+            {CarouselData.map((slide, index) => {
+                return (
+                    <div className={index === current ? 'slide-s active' : 'slide-s'} key={index}>
+                        {index === current && (<img src={slide.image} key={index} alt="famous_place" className="image-car" />)}
+
+                    </div>
+                )
+
+            })}
+        </section>
+    );
+};
 
 export default Carousel;
+
+
+

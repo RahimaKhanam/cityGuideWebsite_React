@@ -4,13 +4,14 @@ import Carousel from '../layouts/Carousel';
 import { Link } from 'react-router-dom';
 import '../../App.css';
 import g1 from '../images/g1.jpg';
-import g2 from '../images/g2.jpg';
+import { CarouselData } from '../layouts/CarouselData';
+// import g2 from '../images/g2.jpg';
 
 class Home extends Component {
     render() {
         return (
             <div>
-                <Carousel />
+                <Carousel slides={CarouselData}/>
 
                 {/* About Section */}
                 <div className="col-md-12 text-center m-auto">
