@@ -44,6 +44,14 @@ body {
 
 .g-cont {
     height: 60vh;
-    width: auto;
+    width: 75vw;
+    object-fit: fill;
+    object-position: 0 0;
+}
+
+@media(min-width: 768px) {
+    .g-cont {
+        margin-left: 3rem !important;
+    }
 }
 

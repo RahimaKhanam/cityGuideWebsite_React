@@ -7,9 +7,9 @@ function Footer() {
         <FooterContainer className="main-footer">
             <div className="footer-middle">
                 <div className="container">
-                    <div className="row">
+                    <Fot className="row">
                         {/* Column 1 */}
-                        <div className="col-md-4 col-sm-6">
+                        <div className="col-md-4">
                             <h4>CityGuide Details</h4>
                             <hr />
                             <p className="text-white me-5">
@@ -21,7 +21,7 @@ function Footer() {
                         </div>
 
                         {/* Column 2 */}
-                        <div className="col-md-4 col-sm-6">
+                        <div className="col-md-4">
                             <h4>Quick Links</h4>
                             <hr />
                             <div><Link to="/">Home</Link></div>
@@ -31,8 +31,8 @@ function Footer() {
                         </div>
 
                         {/* Column 3 */}
-                        <div className="col-md-4 col-sm-6">
-                            <h4>Additional Information</h4>
+                        <div className="col-md-4 ai">
+                            <h4>Other Information</h4>
                             <hr />
                             <div><p className="text-white mb-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></div>
                             <div><p className="text-white mb-1">+91 899123918</p></div>
@@ -40,7 +40,7 @@ function Footer() {
                             <div><p className="text-white mb-1">email@domain.com</p></div>
                         </div>
 
-                    </div>
+                    </Fot>
 
                     {/*Footer Bottom  */}
                     <div className="footer-bottom">
@@ -81,3 +81,15 @@ color: var(--mainWhite)
 
 `
     ;
+    const Fot = styled.div`
+    @media(max-width: 728px) {
+    
+    .ai {
+        margin-top: 1rem;
+    }
+    
+    
+    }
+
+    
+    `;

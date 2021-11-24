@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Card from './Card';
+import styled from 'styled-components';
 
 // Image import
 import img1 from '../images/dom-fotografii.jpg';
@@ -14,53 +15,52 @@ import img7 from '../images/mamm.jpg';
 class Cards extends Component {
     render() {
         return (
-            <div>
-                <div className="container-fluid d-flex justify-content-center mt-5">
-                    <div className="row">
-                        <div className="col-md-4">
-                            <Card imgsrc={img1} title='EARUM FUGIAT'/>
-                        </div>
-                        <div className="col-md-4">
-                            <Card imgsrc={img2} title='LOREM IPSUM'/>
-                        </div>
-                        <div className="col-md-4">
-                            <Card imgsrc={img3} title='ADIPISICING ELIT'/>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div className="container-fluid d-flex justify-content-center mt-5">
-                    <div className="row">
-                        <div className="col-md-4">
-                            <Card imgsrc={img4} title='PERSPICITIS ILLUM'/>
-                        </div>
-                        <div className="col-md-4">
-                            <Card imgsrc={img5} title='HORUND IRUTE'/>
-                        </div>
-                        <div className="col-md-4">
-                            <Card imgsrc={img6} title='DESERUNT CONSEQUATUR'/>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="container-fluid d-flex justify-content-center mt-5 mb-5">
-                    <div className="row">
-                        <div className="col-md-4">
-                            <Card imgsrc={img7} title='ARCHITECTO COMMODI'/>
-                        </div>
-                        <div className="col-md-4">
-                            <Card imgsrc={img3} title='ADIPISICING ELIT'/>
-                        </div>
-                        <div className="col-md-4">
-                            <Card imgsrc={img2} title='LOREM IPSUM'/>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            <CardWrapper>
+                <Card imgsrc={img1} title='EARUM FUGIAT' description="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Culpa, cupiditate eius! Minima sapiente maiores, nesciunt cupiditate corporis sequi amet hic ex? "/>
+                <Card imgsrc={img2} title='EARUM FUGIAT' description="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Culpa, cupiditate eius! Minima sapiente maiores, nesciunt cupiditate corporis sequi amet hic ex? "/>
+                <Card imgsrc={img3} title='EARUM FUGIAT' description="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Culpa, cupiditate eius! Minima sapiente maiores, nesciunt cupiditate corporis sequi amet hic ex? "/>
+                <Card imgsrc={img4} title='EARUM FUGIAT' description="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Culpa, cupiditate eius! Minima sapiente maiores, nesciunt cupiditate corporis sequi amet hic ex? "/>
+                <Card imgsrc={img5} title='EARUM FUGIAT' description="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Culpa, cupiditate eius! Minima sapiente maiores, nesciunt cupiditate corporis sequi amet hic ex? "/>
+                <Card imgsrc={img6} title='EARUM FUGIAT' description="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Culpa, cupiditate eius! Minima sapiente maiores, nesciunt cupiditate corporis sequi amet hic ex? "/>
+                <Card imgsrc={img7} title='EARUM FUGIAT' description="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Culpa, cupiditate eius! Minima sapiente maiores, nesciunt cupiditate corporis sequi amet hic ex? "/>
+            </CardWrapper>
         )
     }
 }
 
 export default Cards;
+
+const CardWrapper = styled.div`     
+overflow: hidden;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 1fr);
+column-gap: 3rem;
+row-gap: 2rem;
+justify-items: center;
+justify-content: center;
+align-items: center;
+align-content: center;
+margin-left: 8rem !important;
+margin-right: 8rem !important;
+margin-bottom: 3rem;
+
+@media(max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        column-gap: 2rem;
+}
+
+@media(max-width: 500px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        row-gap: 2rem;
+}
+`;

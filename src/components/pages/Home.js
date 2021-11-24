@@ -38,8 +38,8 @@ class Home extends Component {
                     <div class="row g-0">
                         {/* Left section */}
                         <div class="col-md-6 text-center">
-                            <div className="mb-3 mt-3">
-                                <img src={g1} class="ms-5 g-cont shadow" alt="goal_image" />
+                            <div className="mb-3 mt-3 overflow">
+                                <img src={g1} class="g-cont shadow" alt="goal_image" />
                             </div>
 
 
@@ -77,3 +77,5 @@ class Home extends Component {
 }
 
 export default Home;
+
+
