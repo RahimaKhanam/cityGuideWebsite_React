@@ -1,3 +1,3 @@
 # City Guide Website
 
-This is a simple website created using React, React Router, Styled Components, Context API, Boostrap.
+This is a simple website created using React, Styled Components, Boostrap 5 and Firebase.

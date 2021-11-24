@@ -55,12 +55,16 @@ margin-bottom: 3rem;
 @media(max-width: 768px) {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
+        margin-left: 4rem !important;
+        margin-right: 4rem !important;
         column-gap: 2rem;
 }
 
 @media(max-width: 500px) {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(7, 1fr);
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
         row-gap: 2rem;
 }
 `;

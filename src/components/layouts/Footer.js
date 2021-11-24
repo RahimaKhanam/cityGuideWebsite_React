@@ -66,6 +66,7 @@ color: var(--mainWhite)
 .footer-middle a {
     color: var(--mainWhite);
     text-decoration: none;
+    transition: all 0.5s ease-out;
 
 }
 

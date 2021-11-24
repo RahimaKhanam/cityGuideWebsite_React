@@ -31,10 +31,10 @@ const Carousel = ({ slides }) => {
 
             {CarouselData.map((slide, index) => {
                 return (
-                    <div className={index === current ? 'slide-s active' : 'slide-s'} key={index}>
-                        {index === current && (<img src={slide.image} key={index} alt="famous_place" className="image-car" />)}
+                        <div className={index === current ? 'slide-s active' : 'slide-s'} key={index}>
+                            {index === current && (<img src={slide.image} key={index} alt="famous_place" className="image-car" />)}
 
-                    </div>
+                        </div>
                 )
 
             })}
